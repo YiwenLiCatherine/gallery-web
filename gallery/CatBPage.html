@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>Cat B</h1>
+
+
+<p>Puppy cat (or puppy-like cat, canine-like cat, dog-like cat, etc.) is a term used to refer to specific breeds of domestic cats that have unusual behavioral tendencies that are reminiscent of young domestic dogs. 
+    These are within the scope of feline behavior, and may be enhanced through selective breeding. 
+    These behaviors, not specific to any breed, include following people around from room to room, the desire to receive frequent moments of physical affection such as being held and petted, a lack of aggression toward some fellow animals, and a placid nature. 
+    While these attributes are found desirable for owners interacting with their cats, problems can occur when the felines are exposed to dogs and strange people, with the cats possibly being too trusting and too friendly for their own good.
+    Breeds known for these canine behaviors include the Abyssinian, Burmese, Maine Coon, Manx, and Ragdoll, though dog behavior traits can appear regardless of breed.
+
+
+    <em>You can see the picture below...</em> Let's see !</p>
+    
+<div class="grid-container">
+  <div class="item3">
+    <p>Breeds</p>
+    <p>The cultural assumption that cats are distant from people and lack affection compared to dogs has complications.
+        Animals have individual characteristics based on their environment, particularly their past interactions with people. 
+        The nature of selective breeding for both canines and felines varies dramatically across different human cultures as well, with highly distinctive traits (fertility, lifespan, speed, etc) receiving emphasis depending on the historical context.
+    </p>
+  </div> 
+    
+<div class="item4">
+      <p>Image</p>
+      <img src="CatB.jpg" height="300xp" width="300xp">
+  </div>
+</div>
+
+</body>
+</html>

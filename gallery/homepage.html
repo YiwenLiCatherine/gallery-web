@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Gallery</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: rgb(105, 105, 206);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+
+<body>
+<div ></div>
+<h2 >Animal Gallery</h2>
+<p text-align:center>In this page, we have created a gallery which shows animal pictures on the home page.</p>
+<p text-align:center>You can click the bottum on left columns and enter the page in different animals.</p>
+
+<header>
+  <h2>Animals</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="CatAPage.html" >Cat A</a></li>
+      <li><a href="CatBPage.html" >Cat B</a></li>
+      <li><a href="CatCPage.html" >Cat C</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <h1>Cat</h1>
+    <p>The cat (Felis catus) is a domestic species of small carnivorous mammal. It is the only domesticated species in the family Felidae and is often referred to as the domestic cat to distinguish it from the wild members of the family. A cat can either be a house cat, a farm cat or a feral cat; the latter ranges freely and avoids human contact.Domestic cats are valued by humans for companionship and their ability to hunt rodents. About 60 cat breeds are recognized by various cat registries.</p>
+    <p>Here you can see more....</p>
+    <img src="Cat1.jpg" height="80px" width="80px">
+    <img src="Cat2.jpg" height="80px" width="80px">
+    <img src="Cat3.jpg" height="80px" width="80px"> 
+  </article>
+
+
+</section>
+
+
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
